@@ -51,7 +51,7 @@ A unified, end-to-end technical reference synthesizing the root, bootloader unlo
 
 ## 3. Phase 1: Temporary Root (Ghostlock)
 
-* **XDA Thread**: [Temp Root Fire TV Stick 4K 2nd Gen Series (karat/mantra)](https://xdaforums.com/t/temp-root-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798627/) by pro-me3us / yiy.
+* **XDA Thread**: [Temp Root Fire TV Stick 4K 2nd Gen Series (karat/mantra)](https://xdaforums.com/t/temp-root-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798627/) by [rortiz2](https://xdaforums.com/m/rortiz2.8978978/) / pro-me3us / yiy.
 
 1. Download the `ghostlock-karat` archive and extract it on the host PC.
 2. Open terminal in the extracted folder and run:
@@ -72,7 +72,7 @@ A unified, end-to-end technical reference synthesizing the root, bootloader unlo
 
 ## 4. Phase 2: Permanent Bootloader Unlock & TWRP (Amonet)
 
-* **XDA Thread**: [Unlock, Root, TWRP, Unbrick Fire TV Stick 4K 2nd Gen Series (karat/mantra)](https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798951/) by k4y0z / pro-me3us / yiy.
+* **XDA Thread**: [Unlock, Root, TWRP, Unbrick Fire TV Stick 4K 2nd Gen Series (karat/mantra)](https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798951/) by [rortiz2](https://xdaforums.com/m/rortiz2.8978978/) / k4y0z / pro-me3us / yiy.
 
 1. Download the `amonet-karat` archive and extract it.
 2. While the temporary root shell is active, open a separate terminal on host in the `amonet` directory and run:
@@ -220,19 +220,21 @@ adb reboot
 
 ## 9. Primary XDA Threads & Source References
 
-1. **Temporary Root (`ghostlock`)**:
+1. **Exploit & Vulnerability Research (`rortiz2`)**:
+   [https://xdaforums.com/m/rortiz2.8978978/](https://xdaforums.com/m/rortiz2.8978978/)
+2. **Temporary Root (`ghostlock`)**:
    [https://xdaforums.com/t/temp-root-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798627/](https://xdaforums.com/t/temp-root-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798627/)
-2. **Permanent Unlock, Recovery & Unbrick (`amonet`)**:
+3. **Permanent Unlock, Recovery & Unbrick (`amonet`)**:
    [https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798951/](https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798951/)
-3. **Custom ROM (`SweenWolf`)**:
+4. **Custom ROM (`SweenWolf`)**:
    [https://xdaforums.com/t/rom-karat-fire-os-rs8180-3739-rs1849-3133-with-light-debloat-and-custom-launcher.4800114/](https://xdaforums.com/t/rom-karat-fire-os-rs8180-3739-rs1849-3133-with-light-debloat-and-custom-launcher.4800114/)
-4. **Fire OS 7/8 Magisk Modules**:
+5. **Fire OS 7/8 Magisk Modules**:
    [https://xdaforums.com/t/mod-magisk-root-fireos-7-8-magisk-modules-for-fireos-fixing-local-adb-and-launcher-manager.4799301/](https://xdaforums.com/t/mod-magisk-root-fireos-7-8-magisk-modules-for-fireos-fixing-local-adb-and-launcher-manager.4799301/)
-5. **Launcher Manager 2.0.0**:
+6. **Launcher Manager 2.0.0**:
    [https://xdaforums.com/t/system-user-fire-cube-stick-tv-tablet-ps7704-fireos7-rs8149-fireos8.4759215/](https://xdaforums.com/t/system-user-fire-cube-stick-tv-tablet-ps7704-fireos7-rs8149-fireos8.4759215/)
-6. **Lossless Audio Passthrough**:
+7. **Lossless Audio Passthrough**:
    [https://xdaforums.com/t/mod-magisk-root-fireos-7-8-dolby-dd-dd-and-dts-hd-ma-dts-x-passthrough-module.4804107/](https://xdaforums.com/t/mod-magisk-root-fireos-7-8-dolby-dd-dd-and-dts-hd-ma-dts-x-passthrough-module.4804107/)
-7. **Fire TV Firmware Database**:
+8. **Fire TV Firmware Database**:
    [https://ftvdb.com/firetv/firmware/com.amazon.karat.android.os/](https://ftvdb.com/firetv/firmware/com.amazon.karat.android.os/)
-8. **MindTheGapps Repository (The LineageOS Project)**:
+9. **MindTheGapps Repository (The LineageOS Project)**:
    [https://gitlab.com/MindTheGapps/vendor_gapps](https://gitlab.com/MindTheGapps/vendor_gapps)

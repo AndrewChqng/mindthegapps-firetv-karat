@@ -148,4 +148,10 @@ Once booted into Fire OS:
 
 * Documented and engineered with pair programming assistance from **Antigravity (Google DeepMind)**.
 * **Disclaimer**: This is experimental low-level device modification software provided for educational and hobbyist purposes. Modifying device partitions and system services carries risks; use at your own discretion.
-* Credit to the **MindTheGapps** project, **TeamWin (TWRP)**, and the **XDA Fire TV community** (`yiy`, `SweenWolf`, `Pro-me3us`).
+* Credit to the **MindTheGapps** project, **TeamWin (TWRP)**, and the **XDA Fire TV community**:
+  - [rortiz2](https://xdaforums.com/m/rortiz2.8978978/) (Vulnerability discovery, exploit development, and root tools)
+  - [yiy](https://xdaforums.com/m/yiy.13262626)
+  - [Pro-me3us](https://xdaforums.com/t/temp-root-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798627/)
+  - [k4y0z](https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798951/)
+  - [SweenWolf](https://xdaforums.com/t/rom-karat-fire-os-rs8180-3739-rs1849-3133-with-light-debloat-and-custom-launcher.4800114/)
+  - [signde](https://xdaforums.com/t/mod-magisk-root-fireos-7-8-dolby-dd-dd-and-dts-hd-ma-dts-x-passthrough-module.4804107/)
