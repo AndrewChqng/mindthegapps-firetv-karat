@@ -93,6 +93,14 @@ This generates:
 
 ---
 
+## Complete Root & Setup Guide
+
+Looking for the full, start-to-finish guide covering **temporary root (ghostlock)**, **bootloader unlock (amonet)**, **stock vs custom ROM tracks**, **OTA update blocking**, and **Fire TV remote recovery shortcuts**?
+
+See **[ROOT_AND_GAPPS_GUIDE.md](ROOT_AND_GAPPS_GUIDE.md)** for the synthesized manual referencing all primary XDA threads.
+
+---
+
 ## Installation via TWRP
 
 1. Reboot your Fire TV Stick into TWRP recovery:
