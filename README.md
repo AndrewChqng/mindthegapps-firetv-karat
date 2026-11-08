@@ -95,7 +95,7 @@ This generates:
 
 ## Complete Root & Setup Guide
 
-Looking for the full, start-to-finish guide covering **temporary root (ghostlock)**, **bootloader unlock (amonet)**, **stock vs custom ROM tracks**, **OTA update blocking**, and **Fire TV remote recovery shortcuts**?
+Looking for the full, start-to-finish guide covering **temporary root (ghostlock)**, **bootloader unlock (amonet)**, **stock vs custom ROM tracks**, **OTA update blocking**, **essential apps & utilities (Files app / DocumentsUI)**, and **Fire TV remote recovery shortcuts**?
 
 See **[ROOT_AND_GAPPS_GUIDE.md](ROOT_AND_GAPPS_GUIDE.md)** for the synthesized manual referencing all primary XDA threads.
 
@@ -153,5 +153,6 @@ Once booted into Fire OS:
   - [yiy](https://xdaforums.com/m/yiy.13262626)
   - [Pro-me3us](https://xdaforums.com/t/temp-root-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798627/)
   - [k4y0z](https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798951/)
+  - [Skel40](https://xdaforums.com/t/files-app-fire-os-8-com-android-documentsui.4798993/) (Files app / DocumentsUI extraction & Fire OS 8 tools)
   - [SweenWolf](https://xdaforums.com/t/rom-karat-fire-os-rs8180-3739-rs1849-3133-with-light-debloat-and-custom-launcher.4800114/)
   - [signde](https://xdaforums.com/t/mod-magisk-root-fireos-7-8-dolby-dd-dd-and-dts-hd-ma-dts-x-passthrough-module.4804107/)

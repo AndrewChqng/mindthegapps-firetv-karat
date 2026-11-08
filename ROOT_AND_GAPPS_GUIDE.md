@@ -15,9 +15,10 @@ A unified, end-to-end technical reference synthesizing the root, bootloader unlo
    - [Track B: Amazon Stock ROM & Hardening](#track-b-amazon-stock-rom--hardening)
    - [Track C: Updating / Changing Builds](#track-c-updating--changing-builds)
 6. [Phase 4: Google Play Store Installation (MindTheGapps Minimal)](#phase-4-google-play-store-installation-mindthegapps-minimal)
-7. [Essential Magisk Modules & System Tweaks](#7-essential-magisk-modules--system-tweaks)
-8. [Hardware Combos & Remote Shortcuts](#8-hardware-combos--remote-shortcuts)
-9. [Primary XDA Threads & Source References](#9-primary-xda-threads--source-references)
+7. [Essential System Utilities & Files App (DocumentsUI)](#7-essential-system-utilities--files-app-documentsui)
+8. [Essential Magisk Modules & System Tweaks](#8-essential-magisk-modules--system-tweaks)
+9. [Hardware Combos & Remote Shortcuts](#9-hardware-combos--remote-shortcuts)
+10. [Primary XDA Threads & Source References](#10-primary-xda-threads--source-references)
 
 ---
 
@@ -179,7 +180,36 @@ adb reboot
 
 ---
 
-## 7. Essential Magisk Modules & System Tweaks
+## 7. Essential System Utilities & Files App (DocumentsUI)
+
+* **XDA Thread**: [Files App (Fire OS 8) (com.android.documentsui)](https://xdaforums.com/t/files-app-fire-os-8-com-android-documentsui.4798993/) by [Skel40](https://xdaforums.com/m/skel40.9234857/).
+
+Fire OS 8 strips the standard document picker / files manager launcher shortcuts from the home screen, which can prevent sideloaded apps, browsers, and emulators from prompting the native Android Storage Access Framework (SAF) document picker or managing internal downloads.
+
+### Native Files App (`com.android.documentsui`)
+The Files app / Storage Access Framework package is already present on Fire OS 8 as a system package (`com.android.documentsui`), but lacks a home-screen launch intent.
+
+To launch the native AOSP Files app / document manager directly via ADB or custom launcher shortcuts:
+```bash
+# Launch Document Browser / Files activity:
+adb shell am start -n com.android.documentsui/.files.FilesActivity
+
+# Or launch root picker:
+adb shell am start -n com.android.documentsui/.LauncherActivity
+```
+
+If accidentally removed or disabled during debloating, restore it via:
+```bash
+adb shell cmd package install-existing com.android.documentsui
+```
+
+### Recommended Companion Utilities
+* **MiXplorer**: Advanced root-enabled file manager with built-in text/media viewer and SMB/FTP server: [MiXplorer on XDA](https://mixplorer.com/).
+* **TV Bro**: Lightweight TV web browser with Gecko rendering engine and download manager: [TV Bro Releases](https://github.com/truefedex/tv-bro/releases/latest).
+
+---
+
+## 8. Essential Magisk Modules & System Tweaks
 
 * **XDA Magisk Module Hub**: [Magisk Modules for FireOS Fixing Local ADB and Launcher Manager](https://xdaforums.com/t/mod-magisk-root-fireos-7-8-magisk-modules-for-fireos-fixing-local-adb-and-launcher-manager.4799301/) by SweenWolf.
 * **XDA Passthrough Audio Module**: [Dolby DD+, DTS-HD MA, DTS:X Passthrough](https://xdaforums.com/t/mod-magisk-root-fireos-7-8-dolby-dd-dd-and-dts-hd-ma-dts-x-passthrough-module.4804107/) by signde.
@@ -203,7 +233,7 @@ adb reboot
 
 ---
 
-## 8. Hardware Combos & Remote Shortcuts
+## 9. Hardware Combos & Remote Shortcuts
 
 | Action | Physical Remote Buttons | Duration | Notes |
 | :--- | :--- | :--- | :--- |
@@ -218,7 +248,7 @@ adb reboot
 
 ---
 
-## 9. Primary XDA Threads & Source References
+## 10. Primary XDA Threads & Source References
 
 1. **Exploit & Vulnerability Research (`rortiz2`)**:
    [https://xdaforums.com/m/rortiz2.8978978/](https://xdaforums.com/m/rortiz2.8978978/)
@@ -226,15 +256,17 @@ adb reboot
    [https://xdaforums.com/t/temp-root-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798627/](https://xdaforums.com/t/temp-root-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798627/)
 3. **Permanent Unlock, Recovery & Unbrick (`amonet`)**:
    [https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798951/](https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798951/)
-4. **Custom ROM (`SweenWolf`)**:
+4. **Files App (`com.android.documentsui`) on Fire OS 8 (`Skel40`)**:
+   [https://xdaforums.com/t/files-app-fire-os-8-com-android-documentsui.4798993/](https://xdaforums.com/t/files-app-fire-os-8-com-android-documentsui.4798993/)
+5. **Custom ROM (`SweenWolf`)**:
    [https://xdaforums.com/t/rom-karat-fire-os-rs8180-3739-rs1849-3133-with-light-debloat-and-custom-launcher.4800114/](https://xdaforums.com/t/rom-karat-fire-os-rs8180-3739-rs1849-3133-with-light-debloat-and-custom-launcher.4800114/)
-5. **Fire OS 7/8 Magisk Modules**:
+6. **Fire OS 7/8 Magisk Modules**:
    [https://xdaforums.com/t/mod-magisk-root-fireos-7-8-magisk-modules-for-fireos-fixing-local-adb-and-launcher-manager.4799301/](https://xdaforums.com/t/mod-magisk-root-fireos-7-8-magisk-modules-for-fireos-fixing-local-adb-and-launcher-manager.4799301/)
-6. **Launcher Manager 2.0.0**:
+7. **Launcher Manager 2.0.0**:
    [https://xdaforums.com/t/system-user-fire-cube-stick-tv-tablet-ps7704-fireos7-rs8149-fireos8.4759215/](https://xdaforums.com/t/system-user-fire-cube-stick-tv-tablet-ps7704-fireos7-rs8149-fireos8.4759215/)
-7. **Lossless Audio Passthrough**:
+8. **Lossless Audio Passthrough**:
    [https://xdaforums.com/t/mod-magisk-root-fireos-7-8-dolby-dd-dd-and-dts-hd-ma-dts-x-passthrough-module.4804107/](https://xdaforums.com/t/mod-magisk-root-fireos-7-8-dolby-dd-dd-and-dts-hd-ma-dts-x-passthrough-module.4804107/)
-8. **Fire TV Firmware Database**:
+9. **Fire TV Firmware Database**:
    [https://ftvdb.com/firetv/firmware/com.amazon.karat.android.os/](https://ftvdb.com/firetv/firmware/com.amazon.karat.android.os/)
-9. **MindTheGapps Repository (The LineageOS Project)**:
+10. **MindTheGapps Repository (The LineageOS Project)**:
    [https://gitlab.com/MindTheGapps/vendor_gapps](https://gitlab.com/MindTheGapps/vendor_gapps)
