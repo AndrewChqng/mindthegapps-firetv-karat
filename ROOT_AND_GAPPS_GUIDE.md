@@ -204,6 +204,7 @@ adb shell cmd package install-existing com.android.documentsui
 ```
 
 ### Recommended Companion Utilities
+* **[FireOS Overscan Calibrator (`com.fireos.overscan`)](https://github.com/AndrewChqng/fireos-overscan-calibrator)**: Native Fire OS 8 granular 4-direction (`Left`, `Top`, `Right`, `Bottom`) overscan calibration app using Amazon's `OverscanService` (`Settings.Global` `overscan_values` / `overscan_enabled` -> `SurfaceFlinger`) with `WRITE_SECURE_SETTINGS` or root auto-escalation. Also see legacy prior art for Fire OS 5 / Android <11: [jtdevops/firestick-overscan (`OverscanPlus`)](https://github.com/jtdevops/firestick-overscan).
 * **MiXplorer**: Advanced root-enabled file manager with built-in text/media viewer and SMB/FTP server: [MiXplorer on XDA](https://mixplorer.com/).
 * **TV Bro**: Lightweight TV web browser with Gecko rendering engine and download manager: [TV Bro Releases](https://github.com/truefedex/tv-bro/releases/latest).
 

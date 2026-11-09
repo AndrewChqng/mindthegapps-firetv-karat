@@ -102,7 +102,7 @@ This generates:
 
 ## Complete Root & Setup Guide
 
-Looking for the full, start-to-finish guide covering **temporary root (ghostlock)**, **bootloader unlock (amonet)**, **stock vs custom ROM tracks**, **OTA update blocking**, **essential apps & utilities (Files app / DocumentsUI)**, and **Fire TV remote recovery shortcuts**?
+Looking for the full, start-to-finish guide covering **temporary root (ghostlock)**, **bootloader unlock (amonet)**, **stock vs custom ROM tracks**, **OTA update blocking**, **essential apps & utilities (Files app / DocumentsUI & [FireOS 4-Direction Overscan Calibrator](https://github.com/AndrewChqng/fireos-overscan-calibrator))**, and **Fire TV remote recovery shortcuts**?
 
 See **[ROOT_AND_GAPPS_GUIDE.md](ROOT_AND_GAPPS_GUIDE.md)** for the synthesized manual referencing all primary XDA threads.
 
