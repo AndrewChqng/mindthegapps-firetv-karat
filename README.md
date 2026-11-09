@@ -67,14 +67,21 @@ Installing standard [MindTheGapps 11.0.0 ARM ATV](https://androidfilehost.com/?w
 1. **Fire TV Stick 4K Max (2nd Gen)** (`karat` / `AFTKRT`).
 2. Bootloader unlocked with **TWRP** recovery installed (e.g. via `amonet`).
 3. Rooted with **Magisk** (e.g. `Magisk-31.1.FTV`).
-4. Python 3 on your host PC.
-5. Official source zip: [MindTheGapps-11.0.0-arm-ATV-20230922_081030.zip](https://androidfilehost.com/?w=files&flid=322935).
+4. Python 3 on your host PC *(only required if building from source)*.
+5. Official source zip: [MindTheGapps-11.0.0-arm-ATV-20230922_081030.zip](https://github.com/AndrewChqng/mindthegapps-firetv-karat/releases/tag/v1.0.0) *(mirrored in [Releases](https://github.com/AndrewChqng/mindthegapps-firetv-karat/releases/tag/v1.0.0) and on [AndroidFileHost](https://androidfilehost.com/?w=files&flid=322935))*.
 
 ---
 
-## Build Instructions
+## Pre-Built Release vs. Building From Source
 
-Run the patch script against the official MindTheGapps ATV zip:
+You can download the pre-built packages directly from **[GitHub Releases (`v1.0.0`)](https://github.com/AndrewChqng/mindthegapps-firetv-karat/releases/tag/v1.0.0)**:
+* `MindTheGapps-11.0.0-arm-ATV-PlayStore-minimal.zip` — Ready-to-flash TWRP package (includes the Magisk module).
+* `adep_verifier_disabler_mm.zip` — Standalone Magisk module.
+* `MindTheGapps-11.0.0-arm-ATV-20230922_081030.zip` — Original unmodified upstream MindTheGapps archive used to build the minimal package.
+
+### Build Instructions (Reproducible Patcher)
+
+To generate the minimal zip yourself from the official MindTheGapps ATV zip:
 
 ```bash
 git clone https://github.com/AndrewChqng/mindthegapps-firetv-karat.git
